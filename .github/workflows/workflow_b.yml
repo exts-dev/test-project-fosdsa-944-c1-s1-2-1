@@ -1,0 +1,11 @@
+name: Workflow B
+on: push
+jobs:
+  output_success:
+    name: Output success
+    runs-on: ubuntu-latest
+    outputs:
+      random-number: ${{ steps.random-number-generator.outputs.random-id }}
+    steps:
+      - id: random-number-generator
+        run: echo "::set-output name=random-id::$(echo $RANDOM)"

@@ -1,0 +1,8 @@
+name: Workflow C
+on: push
+jobs:
+  random:
+    name: Random return
+    runs-on: ubuntu-latest
+    steps:
+      - run: (( $RANDOM > 25000 ))

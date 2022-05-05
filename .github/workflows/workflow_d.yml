@@ -1,0 +1,21 @@
+name: Workflow D
+on: push
+jobs:
+  success_1:
+    name: Success 1
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run 1"
+      - run: echo "Run 1 bis"
+  success_2:
+    name: Success 2
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run 2"
+      - run: echo "Run 2 bis"
+  success_3:
+    name: Success 3
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run 3"
+      - run: echo "Run 3 bis"
